@@ -7,9 +7,18 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+
+  <nav class="nav" aria-label="Main">
+    <a href="#hero" class="nav-logo">Adir Raphael</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Work</a></li>
+      <li><a href="mailto:Adirraph@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero / Intro -->
   <section id="hero" class="hero">
@@ -27,6 +36,9 @@
           </div>
         </div>
       </div>
+      <a href="https://join-hitch.com/" target="_blank" rel="noopener noreferrer" class="hero-badge">
+        <span class="dot"></span> Founder of Hitch &nearr;
+      </a>
       <div class="hero-text">
         <h1 class="hero-name">Adir Raphael</h1>
         <p class="hero-title">Business Analyst</p>
@@ -62,7 +74,8 @@
   <!-- Projects -->
   <section id="projects" class="section projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <span class="section-eyebrow">Selected work</span>
+      <h2 class="section-title">Projects<span class="count"></span></h2>
       <div class="projects-grid">
 
         <article class="card">
@@ -78,7 +91,7 @@
           </div>
           <h3 class="card-title">Hitch - Founder</h3>
           <p class="card-desc">
-            I founded Hitch, a campus rental marketplace where students borrow items from nearby classmates or earn money lending what they already own. The app is still in development and is planned to launch on the App Store soon.
+            I founded Hitch, a campus rental marketplace that allows students to borrow everyday items from nearby classmates. Built the platform from scratch, taking it from the initial idea through product design, development, and implementation. The app is currently in development, with an App Store launch planned soon.
           </p>
           <div class="card-tags">
             <span class="tag tag-sm">Next.js</span>
@@ -224,7 +237,11 @@
   </section>
 
   <footer class="footer">
-    <p>Designed &amp; built by Adir Raphael &mdash; <span id="year"></span></p>
+    <div class="footer-inner">
+      <p class="footer-kicker">Get in touch</p>
+      <a href="mailto:Adirraph@gmail.com" class="footer-mail">Adirraph@gmail.com</a>
+      <p class="footer-note">&copy; <span id="year"></span> Adir Raphael</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

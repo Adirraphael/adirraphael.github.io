@@ -42,3 +42,4 @@ fadeEls.forEach((el) => {
   el.classList.add('fade-in');
   fadeObserver.observe(el);
 });
+
